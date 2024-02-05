@@ -19,7 +19,7 @@
 
   <XADC_En>Disabled</XADC_En>
 
-  <TargetFPGA>xc7a200t-fbg484/-2</TargetFPGA>
+  <TargetFPGA>xc7a200t-fbg484/-3</TargetFPGA>
 
   <Version>4.2</Version>
 
@@ -39,13 +39,13 @@
 
   <Controller number="0">
     <MemoryDevice>DDR3_SDRAM/Components/MT41J256m16XX-125</MemoryDevice>
-    <TimePeriod>2500</TimePeriod>
+    <TimePeriod>1875</TimePeriod>
     <VccAuxIO>1.8V</VccAuxIO>
     <PHYRatio>4:1</PHYRatio>
     <InputClkFreq>200</InputClkFreq>
     <UIExtraClocks>1</UIExtraClocks>
-    <MMCM_VCO>800</MMCM_VCO>
-    <MMCMClkOut0> 8.000</MMCMClkOut0>
+    <MMCM_VCO>1066</MMCM_VCO>
+    <MMCMClkOut0>10.250</MMCMClkOut0>
     <MMCMClkOut1>1</MMCMClkOut1>
     <MMCMClkOut2>1</MMCMClkOut2>
     <MMCMClkOut3>1</MMCMClkOut3>
@@ -57,7 +57,7 @@
     <Ordering>Strict</Ordering>
     <BankMachineCnt>4</BankMachineCnt>
     <CustomPart>TRUE</CustomPart>
-    <NewPartName>MT41J512m16XX-125</NewPartName>
+    <NewPartName>IS43TR16512-125</NewPartName>
     <RowAddress>16</RowAddress>
     <ColAddress>10</ColAddress>
     <BankAddress>3</BankAddress>
@@ -124,11 +124,11 @@
       <Pin Bank="Select Bank" PADName="No connect" name="tg_compare_error"/>
     </System_Control>
     <TimingParameters>
-      <Parameters tcke="5" tfaw="40" tras="35" trcd="13.75" trefi="7.8" trfc="260" trp="13.75" trrd="7.5" trtp="7.5" twtr="7.5"/>
+      <Parameters tcke="7.5" tfaw="40" tras="35" trcd="13.75" trefi="7.8" trfc="350.0" trp="13.75" trrd="10.0" trtp="10.0" twtr="10.0"/>
     </TimingParameters>
     <mrBurstLength name="Burst Length">8 - Fixed</mrBurstLength>
     <mrBurstType name="Read Burst Type and Length">Sequential</mrBurstType>
-    <mrCasLatency name="CAS Latency">6</mrCasLatency>
+    <mrCasLatency name="CAS Latency">7</mrCasLatency>
     <mrMode name="Mode">Normal</mrMode>
     <mrDllReset name="DLL Reset">No</mrDllReset>
     <mrPdMode name="DLL control for precharge PD">Slow Exit</mrPdMode>
@@ -142,7 +142,7 @@
     <emrDQS name="TDQS enable">Enabled</emrDQS>
     <emrRDQS name="Qoff">Output Buffer Enabled</emrRDQS>
     <mr2PartialArraySelfRefresh name="Partial-Array Self Refresh">Full Array</mr2PartialArraySelfRefresh>
-    <mr2CasWriteLatency name="CAS write latency">5</mr2CasWriteLatency>
+    <mr2CasWriteLatency name="CAS write latency">6</mr2CasWriteLatency>
     <mr2AutoSelfRefresh name="Auto Self Refresh">Enabled</mr2AutoSelfRefresh>
     <mr2SelfRefreshTempRange name="High Temparature Self Refresh Rate">Normal</mr2SelfRefreshTempRange>
     <mr2RTTWR name="RTT_WR - Dynamic On Die Termination (ODT)">Dynamic ODT off</mr2RTTWR>
